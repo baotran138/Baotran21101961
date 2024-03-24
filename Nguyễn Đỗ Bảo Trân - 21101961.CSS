@@ -1,0 +1,122 @@
+﻿/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Define primary color variable */
+:root {
+  --primary-color: rgb(131, 213, 131);
+}
+
+/* Reset CSS properties */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set body properties */
+body {
+  height: 100vh;
+  background: linear-gradient(to right,#642B73,#C6426E);
+  font-family: "Poppins";
+}
+
+/* Set card properties */
+.card {
+  margin: 120px auto;
+  width: 300px;
+  height: 500px;
+  background: rgb(94, 128, 128);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  position: relative;
+}
+
+/* Set heart and cart properties */
+.card_heart,
+.card_cart {
+  font-size: 25px;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.card_cart {
+  left: unset; /* Use 'unset' to override left property */
+  right: 20px;
+}
+
+/* Set card img properties */
+.card_img {
+  width: 90%;
+  transition: 0.5s;
+}
+
+.card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Set card title and price properties */
+.card_title,
+.card_price {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.card_title {
+  color: var(--primary-color);
+}
+
+/* Set card size and color properties */
+.card_size,
+.card_color {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card_size span,
+.card_color span {
+  padding: 1px 10px;
+  background: rgb(220, 211, 211);
+  color: black;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.card_color span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+/* Set card color variations properties */
+.card_color_green {
+  background: green;
+}
+
+.card_color_red {
+  background: red;
+}
+
+.card_color_yellow {
+  background: rgb(202, 232, 9);
+}
+
+/* Set card action button properties */
+.card_action button {
+  background: var(--primary-color);
+  border: none;
+  outline: none;
+  color: aliceblue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10
